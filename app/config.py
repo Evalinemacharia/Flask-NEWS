@@ -2,7 +2,8 @@ class Config:
     '''
     General configuration parent class
     '''
-    NEWS_API_BASE_URL ='https://newsapi.org/v2/everything?q=bitcoin&apiKey=91eca0418d69417cbeb9c2ba667c720a'
+    ARTICLES_URL = 'https://newsapi.org/v2/top-headlines/sources?apiKey=API_KEY'
+    NEWS_API_BASE_URL =NEWS_API_BASE_URL = 'https://newsapi.org/v2/sources?language=en&category={}&apiKey={}'
 
 
 
@@ -25,3 +26,8 @@ class DevConfig(Config):
     '''
 
     DEBUG = True
+
+config_options = {
+    'development':DevConfig,
+    'production':ProdConfig
+    }   
