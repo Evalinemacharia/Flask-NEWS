@@ -11,7 +11,7 @@ class New:
         self.country = country
         self.urlToImage = urlToImage
     
-class Articles:
+class articles:
     '''
     class that defines the behaviour of the articles
     '''

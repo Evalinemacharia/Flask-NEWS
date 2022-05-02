@@ -2,8 +2,8 @@ from os import name
 
 import urllib.request,json
 from newsapi import NewsApiClient
-from .models import News
-from .models import Articles
+from .models import news
+# from .models import articles
 
 # Getting api key
 api_key = None
